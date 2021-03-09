@@ -1,0 +1,119 @@
+//expression (input) - evaluation - return value (output)
+
+irb // Interactive Ruby for Ruby expressions, temporary
+
+// REPL - Read-Evaluate-Print Loop
+
+Time.now // prints current date time
+puts "message" // prints message
+exit // exits IRB
+
+# // comment character
+#=> // document return value
+
+// expression - combinations of information (data & sybols) indicating how to combine data (operators)
+// evaluation - process of interpreting an expression to produce a return value
+
+// constant expression - plain old data, tells Ruby to stop evaluation, last expression in a complex expression
+
+// assignment expression - bonding an expression to a variable using =
+  == // comparison operator represents 'equal to'
+// variable - lowercase separated by _
+// mutable variable - variable that can be changed
+// immutable variable - writing a constant - assign in ALL_CAPS
+// ** return value of an assignment expression is not the same as getting the value out of the variable name
+
+// variable lookup expression - getting the value of a variable by typing the variable name
+
+// reserved words - words for computers i.e. def, if, varcha, for
+// bare words - words for humans i.e. my_weight
+// data - constants or values
+// scalar data - data that can be put on a scale
+// 5 scalar data types:
+  Integer - whole numbers, negative or positive, includes 0
+  Float - decimals, negative or positive, includes 0
+  Boolean - true or false
+  String - text surrounded in "" or ''
+  Symbol - bare word with : in front i.e. :i_am_a_symbol
+  
+.class // add after expression, indicates type of data i.e. 10.class
+
+// Ruby does not return unlike data types i.e. 8 / 3 #=> 2
+
+// ternary expression - expression that can provide one of two values based on the Boolean value of a 3rd value (if-else conditional expression)
+//boolean_conditional_value ? "thing_to_return_if_true" : "thing_to_return_if_false"
+ex. likely_to_rain = true
+    garment = likely_to_rain ? "galoshes" : "sun hat" 
+
+// Strings can be compared (case sensitive)
+// != bang equals/not equals
+// ! inverts a truth value
+  !true #=> false
+  !false #=> true
+// !! double bang - inverts truth value twice, used to explicity return a true or fale value
+  !!true #=> true
+  !!false #=> false
+// **Ruby will treat anything that is 'false' or 'nil' as false, but everything else as true
+// && double ampersand "AND" - both values of either side evaluate to true
+  true && true #=> true
+  true && false #=> false
+// || double pipe "OR" - only one value on either side must evaluate to true
+
+// Interpolation in Ruby uses double quotes. Use #{} for inserting expressions
+// Single quoted string means don't interpolate
+// Use \ before " to include quotes in string and allow for Interpolation
+  ex. character = "Amy"
+      little_woman_esque = "\"Wait,\" said #{character}, \"Do not go without me!\""
+
++ // Join Strings - only when both sides are Strings
+to.s // Method to convert data to string
+
+
+
+// Expressions always return a value. Statements do not.
+nil // means "no value" not true or false, does not exist
+
+// 3 core categories of code Statements
+  // Sequence - order
+  // Selection - deviating from Sequence
+if // disrupts default sequence to run a test
+  // Repetition - Update Sequence to repeat
+.times // method "do something <value> times"
+do...end // block like {} in JS
+
+print "message" // outputs message with nil on same line
+puts "message" // outputs message with "newline" character
+"\n" // inside a string creates a new line
+p "message" // prints message AND returns it as a "raw" version
+
+if 
+elsif
+else
+end
+
+Time.now.year // current year
+
+case // if with multiple elsif
+  when
+  when
+  else
+end
+
+while (condition expression = true) do // truthy
+  # stuff to do
+end
+
+Control-C // interrupts infinite loop
+
+count += 1 // take the value of count, add 1 to it and then re-assign that result to count, also -= *= /= %=
+
+break // priority or anomalous interruption
+
+Integer.times do // does [Integer] times (method)
+end
+
+loop // infinitely runs and breaks on condition, intention to run forever
+end
+
+until // inverse of while, will execute a block until a condition is true
+end

@@ -1,0 +1,55 @@
+// array - ordered list
+// hash - lookup tables/dictionaries
+
+// array - made up of individual elements and identified by an index
+// index are positive integers starting at 0
+// ordering - index assigned based on list order
+
+array = ["Element 1", "Element 2"]
+
+array = Array.new #=> [ ] // class constructor
+
+array << "Element" // shovel - add item to end of array
+array.push("Element") // method to add item to end of array
+array.unshift("Element") // method to add item to beginning of array
+array.pop // method to remove last item at end of array, also returns   removed element - add (num) to remove multiple elements
+array.shift // method to remove first item at beginning of array,      also returns removed element - add (num) to remove multiple elements
+// other delete methods https://docs.ruby-lang.org/en/2.0.0/Array.html#method-i-delete_at
+
+array[0] // calls/retrieves the element at index 0, can use negative   numbers to call from end of array starting at -1
+array.index("Element") // returns first index number of element        matching the argument
+
+array[0] = "New Element" // updates/replaces element 
+
+new_array = array.sort // method sorts elments in a => z or            increasing order
+array.sort! // method sorting in existing array
+
+array.reverse // method sorts elements in opposite order
+array.reverse! // to save sorted array as existing
+
+array.first // method will return first element of array
+array.last // method will return last element of array
+
+array.include?(element) // method returns a boolean of whether or not   array contains the element
+
+array.size // method returns the number of elements in the array
+array.length // "" ""
+
+array.concat(array2) // appends other elements to self
+array.insert(index,element) // inserts element at designated index
+array.uniq // removes duplicate items from array
+array.flatten // used when array contains other arrays, returns an array with strings
+array.delete(element) // deletes element from array
+array.delete_at(index) // deletes element at index
+
+array.join(separator) // joins elements as a string separated by the separator
+%w[ ] // creates an array of words
+string.split(separator) // splits string as elements in array ignoring the separator
+
+start_point..end_point // inclusive array range - includes both first & last values in the range
+start_point...endpoint // exclusive array range - excludes the last value in the range
+
+.to_a // method that converts range to an array
+
+// code blocks - a way of grouping statements do...end or { }
+// block parameters are surrounded by | | pipe symbols

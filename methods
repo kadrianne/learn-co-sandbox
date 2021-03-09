@@ -1,0 +1,38 @@
+// methods - bundle one or more activities into a single unit
+// abstraction - cleaner code by grouping repitition
+
+// DRY - Don't Repeat Yourself
+
+def method_name // method signature, names method
+  puts "message" // implementation or body
+end
+
+method_name // calls a method
+
+// snake case - separating words using underscore _
+
+// arguments - changes to a method to be dynamic, creates new local variables (parameters) that can be used within the scope of the method
+
+// arity - the number of arguments an operation expects i.e. the arity of addition is two
+
+def greeting(parameter) // parameter - local variable specific to the method, appear in method definitions
+end
+
+greeting(argument) // argument - value you pass to a method when you call the method that is assigned to a parameter, appear in method calls
+
+def greeting(name='neighbor') // default argument when argument is optional
+  puts "Hello, #{name}!"
+end
+
+// implicit return - last expression in a method's implementation is the return value
+// puts and print always return nil
+// explicit return - use 'return' to exit early from a method, remainder of code won't be executed
+
+// scope - defines where in a program a variable is accessible or "visible"
+  // like to keep scope as small as possible
+// global scope - when variable is assigned outside of a method
+  $global_variable
+  $GLOBAL_VARIABLE
+// local scope - cannot be accessed in other local scopes or in the global scope
+
+// collection data types - "array" & "hash"

@@ -1,0 +1,25 @@
+// hash - table with keys assigned to values
+// keys can be Strings or Symbols (:)
+// Hashes that have symbols as keys are JSON hashes
+
+hash_name = {
+ :key1 => "Value 1",
+ :key2 => "Value 2"
+}
+
+// nesting - when a collection contains other collections
+
+// implicit ("Hash Literal") form - written out
+
+Hash.new // create a new hash
+
+hash[key] // retrieve value for key
+
+fetch(key,return if not found) // looks up value of key and specifies what to return if key is not found
+
+// symbols take up same allocation in memory, strings are given a new allocation
+// symbols cannot be changed, they're immutable
+// can also write a hash key symbol as key: "Value"
+
+hash[key] = "Value" // updates value or creates new key/value pair if key is not found
+

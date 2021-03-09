@@ -1,0 +1,36 @@
+whoami // current user account
+pwd // print working directory
+cd .. // change directory - move up one folder
+cd // home directory
+cd ~ // home directory
+cd /Applications // goes to Applications directory
+
+ls pathname // list files within path directory
+ls -l // list w/ longform
+   -a // all information includding hidden files
+   -h // human readable formats
+
+mv filename /dirl // move file to path directory
+mv original_program.rb renamed_program.rb // rename file
+mv temp_download.gif ~/Desktop/cats_with_weapons/ninja_cat.gif //example of moving and renaming
+
+cp // same syntax for files as mv
+cp -r // copies directory and contents
+
+touch filename // creates empty file
+mkdir name_of_directory // create empty name_of_directory
+rm filename // permanently delete file
+rm -r name_of_directory // permanently delete directory
+rm -i // interactive - prompt to confirm deletion
+   -f // force - overrides interactive mode, deletes without prompt, cannot be undone
+   -v // verbose - shows progress of files being removed
+   
+cat [filename] // catenate - prints contents of file
+open . // open current directory (Finder)
+echo 'message' // print text
+echo 'message' >> [filename] // redirect
+               >  // overwrite
+echo $PATH // environment variable
+which // indicates location
+man // manual pages - help docs
+q // quit
